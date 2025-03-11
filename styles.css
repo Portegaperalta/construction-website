@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
 }
 
@@ -31,7 +31,8 @@ ul {
 }
 
 .logo {
-    margin-left: 15rem;
+    margin-left: 20rem;
+    width: 150px
 }
 
 .nav-links {
@@ -41,13 +42,13 @@ ul {
 }
 
 .nav-links li {
-    margin: 0 1rem;
+    margin: 0 .8rem;
 }
 
 .nav-links a {
     color: var(--clr-white);
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 .nav-links a:hover {
@@ -96,8 +97,8 @@ ul {
 
 .intro-links a {
     color: var(--clr-white);
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: .8rem;
+    font-weight: 500;
     margin: 0 1rem;
     background-color: var(--clr-yellow);
     padding: 0.9rem 1.5rem;
@@ -111,8 +112,8 @@ ul {
 
 .free-consulting {
     background-color: var(--clr-yellow);
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -129,17 +130,94 @@ ul {
 
 .consulting-text h2 {
     color: var(--clr-white);
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-size: 1.1rem;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .consulting-link {
     border: 2px solid var(--clr-white);
     color: var(--clr-white);
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: .8rem;
+    font-weight: 500;
     margin: 0 1rem;
     background-color: var(--clr-yellow);
     padding: 0.9rem 1.5rem;
+}
+
+.consulting-link:hover {
+    color: var(--clr-black);
+    background-color: var(--clr-yellow-light);
+    transition: 0.20s ease-in-out;
+}
+
+
+.process {
+    background-color: var(--clr-black);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.process-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.process-boxes h3 {
+    color: var(--clr-white);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.process-boxes p {
+    color: var(--clr-gray);
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 70%;
+}
+
+.process-boxes a {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--clr-white);
+    border: 2px solid var(--clr-yellow);
+    padding: 0.5rem 1.5rem;
+    background-color: var(--clr-yellow);
+}
+
+.process-boxes a:hover {
+    background-color: var(--clr-yellow-light);
+    color: var(--clr-black);
+    border-color: var(--clr-yellow-light);
+    transition: 0.20s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .header-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 120px;
+        /* Adjust the width for smaller screens */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        /* Hide the nav links by default */
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+        /* Show the nav links when active */
+    }
 }
