@@ -99,7 +99,7 @@ ul {
     color: var(--clr-white);
     font-size: .8rem;
     font-weight: 500;
-    margin: 0 1rem;
+    margin: 8px;
     background-color: var(--clr-yellow);
     padding: 0.9rem 1.5rem;
 }
@@ -160,13 +160,16 @@ ul {
 
 .process-boxes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
+
 .process-boxes h3 {
     color: var(--clr-white);
     font-weight: 600;
+    width: 250px;
     font-size: 1rem;
 }
 
@@ -174,7 +177,7 @@ ul {
     color: var(--clr-gray);
     font-size: 0.9rem;
     font-weight: 500;
-    width: 70%;
+    width: 380px;
 }
 
 .process-boxes a {
@@ -191,6 +194,29 @@ ul {
     color: var(--clr-black);
     border-color: var(--clr-yellow-light);
     transition: 0.20s ease-in-out;
+}
+
+.process-engineering {
+    margin: 30px 30px;
+}
+
+.process-architecture {
+    margin: 30px 30px;
+}
+
+.process-preconstruction {
+    margin: 30px 30px;
+}
+
+.services {
+    background-color: var(--clr-white);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.services-boxes {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
