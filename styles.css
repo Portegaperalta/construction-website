@@ -185,7 +185,7 @@ ul {
     font-weight: 500;
     color: var(--clr-white);
     border: 2px solid var(--clr-yellow);
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     background-color: var(--clr-yellow);
 }
 
@@ -253,16 +253,39 @@ ul {
 
 .reasons {
     background-color: var(--clr-black);
-    padding-top: 70px;
-    padding-bottom: 70px;
+}
+
+.reason-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .reason-info h2 {
     color: var(--clr-white);
+    width: 500px;
 }
 
 .reason-info p {
     color: var(--clr-gray);
+    width: 600px;
+}
+
+.reason-list {
+    list-style-type: none;
+
+}
+
+.reason-list li {
+    color: var(--clr-gray);
+    padding-bottom: 15px;
+}
+
+.reason-list li::before {
+    content: "✓";
+    color: var(--clr-yellow);
+    margin-right: 10px;
 }
 
 @media (max-width: 768px) {
