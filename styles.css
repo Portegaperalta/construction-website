@@ -376,6 +376,7 @@ ul {
 
 .latest-news-title h2 {
     text-align: center;
+    margin-bottom: 49px;
 }
 
 .news-boxes {
@@ -403,6 +404,91 @@ ul {
 
 .news-link:hover {
     text-decoration: underline;
+}
+
+.companies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--clr-yellow);
+}
+
+.companies-container img {
+    opacity: 0.5;
+    transition: 0.20s ease-in-out;
+}
+
+.companies-container img:hover {
+    opacity: 1;
+}
+
+footer {
+    background-color: var(--clr-black);
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo {
+    width: 150px;
+}
+
+.footer-description h3 {
+    color: #9C9C9C;
+}
+
+.footer-description p {
+    color: #9C9C9C;
+    width: 100%;
+    max-width: 400px;
+}
+
+
+.footer-links-box h3 {
+    color: var(--clr-white);
+}
+
+.footer-links-lists {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links-lists ul {
+    margin-right: 50px;
+}
+
+.footer-links-lists li {
+    padding-bottom: 15px;
+}
+
+.footer-links-box a {
+    color: #9C9C9C;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.footer-links-box a:hover {
+    color: var(--clr-white);
+    transition: 0.20s ease-in-out;
+    text-decoration: underline;
+}
+
+.footer-info h3 {
+    color: var(--clr-white);
+}
+
+.footer-info li {
+    color: #9C9C9C;
+    padding-bottom: 15px;
+    font-weight: 500;
 }
 
 @media (max-width: 700px) {
