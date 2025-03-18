@@ -430,6 +430,10 @@ footer {
     background-color: var(--clr-black);
     padding-top: 70px;
     padding-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
 }
 
 .footer-description {
@@ -489,6 +493,11 @@ footer {
     color: #9C9C9C;
     padding-bottom: 15px;
     font-weight: 500;
+}
+
+.footer-copyright {
+    text-align: center;
+    background-color: var(--clr-black);
 }
 
 @media (max-width: 700px) {
