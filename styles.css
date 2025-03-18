@@ -310,6 +310,7 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     padding-top: 140px;
     padding-bottom: 140px;
 }
@@ -373,6 +374,36 @@ ul {
     padding-bottom: 70px;
 }
 
+.latest-news-title h2 {
+    text-align: center;
+}
+
+.news-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-title {
+    font-weight: 600;
+}
+
+.news-text {
+    color: #696868;
+    width: 100%;
+    max-width: 400px;
+}
+
+.news-link {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--clr-black);
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
 
 @media (max-width: 700px) {
     .nav-links {
