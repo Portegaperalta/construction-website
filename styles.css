@@ -11,6 +11,7 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: var(--clr-black);
 }
 
 a {
@@ -335,6 +336,7 @@ ul {
 }
 
 .testimonials {
+    background-color: var(--clr-white);
     padding-top: 70px;
     padding-bottom: 70px;
 }
@@ -420,6 +422,7 @@ ul {
 .companies-container img {
     opacity: 0.5;
     transition: 0.20s ease-in-out;
+    width: 150px;
 }
 
 .companies-container img:hover {
@@ -496,8 +499,13 @@ footer {
 }
 
 .footer-copyright {
+    padding: 30px;
     text-align: center;
-    background-color: var(--clr-black);
+    border-top: 1px solid #9C9C9C;
+}
+
+.footer-copyright p {
+    color: #9C9C9C;
 }
 
 @media (max-width: 700px) {
@@ -513,5 +521,10 @@ footer {
         /* Reduce the width for smaller screens */
         text-align: left;
         /* Optional: Align text to the left for smaller screens */
+    }
+
+    .stats-container {
+        flex-direction: column;
+        gap: 4rem;
     }
 }
